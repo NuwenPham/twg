@@ -1,0 +1,40 @@
+.ui-item-block{
+    transition: box-shadow 150ms;
+    height: 270px;
+    min-width: 227px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 2px 2px 7px rgba(55,55,55,0.1);
+    cursor: pointer;
+}
+
+.ui-item-block:hover{
+    box-shadow: 2px 2px 7px rgba(55,55,55,0.4);
+}
+
+.ui-item-block-big{
+    min-width: 478px;
+}
+
+
+.ui-big-button{
+    transition: background 100ms, box-shadow 100ms;
+    font-family: CFB;
+    /*float: right;*/
+    padding: 14px 45px 9px 45px;
+    border-radius: 23px;
+    background: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0;
+}
+
+.ui-big-button:hover {
+    background: #fbefef;
+    box-shadow: 5px 4px 6px #00000021;
+    color: #444;
+    cursor: pointer;
+}

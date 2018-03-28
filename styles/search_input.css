@@ -1,0 +1,66 @@
+.tagholder{
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+    padding: 5px 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    /* border: 1px solid #000; */
+    background: #fff;
+    border-radius: 7px;
+    min-height: 32px;
+}
+
+.tagholder:hover{
+    box-shadow: 2px 2px 7px rgba(55,55,55,0.1);
+}
+
+.tagitem{
+    display: inline-block;
+    border: 1px solid #a7a7a7;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+    margin-top: 3px;
+    margin-right: 2px;
+    margin-bottom: 1px;
+    margin-left: 2px;
+    border-radius: 14px;
+}
+
+.tagtext{
+    float: left;
+    position: relative;
+    padding: 3px 8px;
+    margin: 0px;
+}
+
+.tagclose{
+    font: Arial, Helvetica, sans-serif;
+    float: left;
+    position: relative;
+    padding: 3px 2px;
+    margin: 0px;
+    cursor: pointer;
+    color: #0087fe;
+    font-weight: bold;
+}
+
+.taginput{
+    vertical-align: top;
+    border: 0px;
+    padding: 6px 1px;
+    width: 100%;
+}
+
+.taginput:focus{
+    outline:none;
+}
+
+.taginputholder{
+    display: inline-block;
+    vertical-align: top;
+    padding: 2px;
+    width: 100%;
+}

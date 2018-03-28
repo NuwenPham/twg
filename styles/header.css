@@ -1,0 +1,205 @@
+.ui-header{
+    min-height: 250px;
+    /*border: 1px solid #444444;*/
+    /*width: 100%;*/
+    box-sizing: border-box;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ui-spacer{
+    height: 120px;
+}
+.ui-header-tg{
+    font-size: 0px;
+    height: 110px;
+    /*border: 1px solid #444444;*/
+    box-sizing: border-box;
+}
+.ui-title{
+    width: 500px;
+    height: 100%;
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+
+    font-size: 26pt;
+    font-family: CFB;
+    color: #fff;
+
+    line-height: 38px;
+}
+.ui-tagline-first{
+    height: auto;
+    position: absolute;
+    bottom: 49px;
+}
+.ui-tagline-second{
+    height: auto;
+    position: absolute;
+    bottom: 13px;
+}
+.ui-tagline-text{}
+.ui-tagline-uniq{
+    color: #1f757a;
+}
+.ui-gender{
+    width: 250px;
+    height: 100%;
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-block;
+
+
+}
+.ui-gender-male{
+    width: 120px;
+    height: 90px;
+    display: inline-block;
+
+    background: url(../images/icons/Man.svg) no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+
+
+    font-size: 10px;
+    text-align: center;
+    font-family: CFB;
+    cursor: pointer;
+}
+
+.ui-gender-male-selected{
+    width: 120px;
+    height: auto;
+    display: inline-block;
+
+    background: url(../images/icons/Man.svg) no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+
+    font-size: 10px;
+    text-align: center;
+    font-family: CFB;
+
+    cursor: pointer;
+}
+
+.ui-gender-male div.ui-gender-male-icon{
+    width: 120px;
+    height: 90px;
+}
+
+.ui-gender-male-selected div.ui-gender-male-icon{
+    width: 120px;
+    height: 90px;
+}
+
+
+.ui-gender-male div.ui-gender-male-text{
+    color: #39aeea;
+    text-transform: uppercase;
+}
+
+.ui-gender-male-selected div.ui-gender-male-text{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+.ui-gender-female{
+    width: 98px;
+    height: auto;
+    display: inline-block;
+
+    background: url(../images/icons/woman.svg) no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+
+    font-size: 10px;
+    text-align: center;
+    font-family: CFB;
+
+    cursor: pointer;
+}
+
+.ui-gender-female-selected{
+    width: 98px;
+    height: auto;
+    display: inline-block;
+
+    background: url(../images/icons/woman.svg) no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+
+    font-size: 10px;
+    text-align: center;
+    font-family: CFB;
+
+    cursor: pointer;
+}
+
+.ui-gender-female div.ui-gender-female-icon{
+    width: 98px;
+    height: 90px;
+}
+
+.ui-gender-female-selected div.ui-gender-female-icon{
+    width: 98px;
+    height: 90px;
+}
+
+
+.ui-gender-female div.ui-gender-female-text{
+    color: #39aeea;
+    text-transform: uppercase;
+}
+
+.ui-gender-female-selected  div.ui-gender-female-text{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+
+.ui-search{
+    height:45px;
+
+}
+.ui-search-input-lay{
+    /*border: 1px solid #444444;*/
+    float: left;
+    width: calc(100% - 250px);
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+.ui-search-button-lay{
+    /*border: 1px solid #444444;*/
+    float: left;
+    width: 250px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.ui-header-search-button{
+    transition: background 200ms;
+    padding: 10px 30px;
+    font-size: 12pt;
+    border-radius: 7px;
+    background: #652376;
+    color: #fff;
+    width: 166px;
+    display: block;
+    font-family: CFB;
+    float: right;
+    cursor: pointer;
+}
+.ui-header-search-button:hover{
+    background: #923f98;
+}
+
+.ui-header-search-button:active{
+    background: #a671b3;
+}
