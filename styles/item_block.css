@@ -20,21 +20,40 @@
     min-width: 478px;
 }
 
+.ui-centerer{
+    margin: 0 auto;
+    position: relative;
+    width: 200px;
+}
 
 .ui-big-button{
     transition: background 100ms, box-shadow 100ms;
     font-family: CFB;
-    /*float: right;*/
-    padding: 14px 45px 9px 45px;
+    padding: 14px 29px 9px 59px;
     border-radius: 23px;
-    background: #fff;
+    background: #e8f9fa;
     border: 1px solid #fff;
     box-shadow: 0;
+    display: inline-block;
 }
 
 .ui-big-button:hover {
-    background: #fbefef;
-    box-shadow: 5px 4px 6px #00000021;
+    background: #b6faee;
+    box-shadow: 3px 3px 6px #00000021;
     color: #444;
     cursor: pointer;
+}
+
+.ui-big-button-icon{
+    background-image: url(../images/icons/reload.svg);
+    background-repeat: no-repeat;
+    background-position: 17%;
+    background-size: 9%;
+}
+
+.ui-big-button-icon:hover{
+    background-image: url(../images/icons/reload.svg);
+    background-repeat: no-repeat;
+    background-position: 17%;
+    background-size: 10%;
 }

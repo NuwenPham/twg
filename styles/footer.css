@@ -1,4 +1,33 @@
-.ui-footer{}
-.ui-footer-menu{}
-.ui-footer-menu-item{}
-.ui-footer-copyright{}
+.ui-footer{
+    height: 60px;
+    border-top: 1px solid #ececec;
+    /* position: absolute; */
+    /* top: 100%; */
+    bottom: 0px;
+    margin-top: -60px;
+    box-sizing: border-box;
+}
+.ui-footer-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+.ui-footer-menu{
+    float: left;
+}
+.ui-footer-menu-item{
+    display: inline-block;
+    width: auto;
+    font-family: CFB;
+    padding-right: 40px;
+    cursor: pointer;
+}
+.ui-footer-menu-item:hover {
+    text-shadow: 2px 1px 1px rgba(55, 55, 55, 0.3);
+}
+.ui-footer-copyright{
+    float: right;
+    color: #888;
+    font-family: CR;
+    font-size: 10pt;
+}

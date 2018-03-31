@@ -1,0 +1,32 @@
+.ui-markets{
+
+}
+
+.ui-item-market-block {
+    transition: box-shadow 150ms;
+    height: 100px;
+    min-width: 310px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 2px 2px 7px rgba(55, 55, 55, 0.1);
+    cursor: pointer;
+}
+
+.ui-item-market-block:hover{
+    box-shadow: 2px 2px 7px rgba(55,55,55,0.4);
+}
+
+.ui-module-best-markets{
+    /*min-height: 200px;*/
+}
+
+.ui-module-title{
+    font-family: CFB;
+    font-size: 12pt;
+    padding-left: 20px;
+    text-transform: uppercase;
+}

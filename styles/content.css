@@ -1,9 +1,35 @@
 .ui-content{
     /*width: 1000px;*/
+    padding-bottom: 60px;
+}
+
+.ui-module-container{
+
 }
 
 .ui-module{
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
+}
+
+.ui-module-advert{
+    background-image: url(../images/ad_back.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 350px;
+    width: 100%;
+
+}
+
+.ui-module-scroll-items-background{
+    background: #ffffff;
+}
+
+.ui-module-attention-items{
+
+}
+
+.ui-module-attention-background{
+    background: #ffffff;
 }
