@@ -1,0 +1,25 @@
+.ui-breadcrumb {
+    color: #9d9e9e;
+    font: 11px CR;
+    padding: 10px 0px;
+    list-style: none;
+}
+
+.ui-breadcrumb li {
+    display: inline;
+}
+
+.ui-breadcrumb li+li:before {
+    padding: 8px;
+    content: ">";
+}
+
+.ui-breadcrumb li a {
+    text-decoration: none;
+    color: #9d9e9e;
+}
+
+.ui-breadcrumb li a:hover {
+    color: #56656e;
+    text-decoration: underline;
+}
