@@ -42,3 +42,22 @@ div{
     background-position-x: 50%;
     background-position-y: 99%;
 }
+
+.g-fl {
+    float: left;
+}
+.g-fr {
+    float: right;
+}
+
+.g-bs{
+    box-sizing: border-box;
+}
+
+.gf-cb {
+   font-family: CFB !important;
+}
+
+.gf-cr {
+    font-family: CR !important;
+}
