@@ -1,0 +1,54 @@
+.ui-module-advert-background{
+    background-image: url(../images/ad_back.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 350px;
+    /*width: 100%;*/
+
+}
+.ui-module-advert{
+
+}
+
+.ui-module-advert-image{
+    padding-top: 40px;
+}
+
+.ui-module-advert-left{
+    width: 40%;
+    height: auto;
+}
+.ui-module-advert-image{
+
+}
+.ui-module-advert-right{
+    width: 60%;
+    height: auto;
+}
+.ui-module-advert-title{
+    font-size: 20pt;
+    font-family: CFB;
+    color: #fff;
+}
+.ui-module-advert-description{
+    font-size: 10pt;
+    font-family: CR;
+    color: #fff;
+
+}
+.ui-module-advert-button{
+    transition: background 100ms, box-shadow 100ms;
+    font-family: CFB;
+    padding: 7px;
+    border-radius: 4px;
+    background: #e8f9fa;
+    border: 1px solid #fff;
+    box-shadow: 0;
+    display: inline-block;
+}
+.ui-module-advert-button:hover{
+    background: #b6faee;
+    box-shadow: 3px 3px 6px #00000021;
+    color: #444;
+    cursor: pointer;
+}

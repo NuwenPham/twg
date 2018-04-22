@@ -2,7 +2,7 @@
  * Created by Cubla on 14.04.2018.
  */
 (function(_export) {
-    var name = "js/ui/modules/recommendation_block";
+    var name = "js/ui/modules/most_views";
     var libs = [
         "js/libs/base",
         "js/requests/product/filteredlist",
@@ -15,11 +15,11 @@
         var request_filteredlist = require("js/requests/product/filteredlist");
         var single_item = require("js/ui/single_item");
 
-        var recommendation_block = Base.create("recommendation_block", {
+        var most_views = Base.create("most_views", {
             constructor: function(_options){
                 var base = {
-                    title_text: "Вам могут понравиться",
-                    load_button_text: "Загрузить еще",
+                    title_text: "Самые просматриваемые",
+                    load_button_text: "Смотреть все",
                     anchor: "#module-recommendation-items"
                 };
                 tools.extend(base, _options);
@@ -27,8 +27,8 @@
                 Base.prototype.constructor.call(this, base);
 
                 this.__title_text = base.title_text;
-                this.__anchor = base.anchor;
                 this.__load_button_text = base.load_button_text;
+                this.__anchor = base.anchor;
                 this.__init();
             },
             __init: function () {
@@ -88,6 +88,6 @@
             }
         });
 
-        return recommendation_block;
+        return most_views;
     });
 })(window);

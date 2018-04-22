@@ -8,7 +8,8 @@
         "js/requests/product/list",
         "js/requests/product/filteredlist",
         "js/ui/modules/recommendation_block",
-        "js/ui/modules/single_item",
+        "js/ui/modules/ad_block",
+        "js/ui/modules/most_views",
     ];
 
     define(name, libs, function () {
@@ -16,7 +17,8 @@
         var request_product_list = require("js/requests/product/list");
         var request_filteredlist = require("js/requests/product/filteredlist");
         var recommendation_block = require("js/ui/modules/recommendation_block");
-        var single_item = require("js/ui/modules/single_item");
+        var ad_block = require("js/ui/modules/ad_block");
+        var most_views = require("js/ui/modules/most_views");
 
         var load_main_page_data = Base.create("load_main_page_data", {
             constructor: function(_options){
@@ -31,47 +33,20 @@
             },
             __init: function () {
                 //debugger;
-                var rpl = new request_filteredlist();
-                rpl.send();
-                rpl.on("success", this.__on_load_products.bind(this));
+
+                var rb = new recommendation_block();
+                $(rb.anchor()).append(rb.wrapper);
+
+                var mv = new most_views();
+                $(mv.anchor()).append(mv.wrapper);
+
+                var ab = new ad_block();
+                $(ab.anchor()).append(ab.wrapper);
             },
+
             __on_load_products: function (_event) {
                 console.log(_event.data);
-
-
-                debugger;
-                var rb = new recommendation_block();
-                $("#module-recommendation-items").append(rb.wrapper);
-
-
-                var a = 0;
-                while(a < _event.data.Data.length){
-                    var block_data = _event.data.Data[a];
-                    rb.add_item_block(new single_item({
-                        item_image: "http://api.twiger.mcdir.ru" + block_data.pictures.mainImg,
-                        title_text: block_data.name,
-                        price: block_data.price,
-                        currency: "₽",
-                        rating: block_data.rating,
-                        comments_count: block_data.views,
-                        likes_count: 0,
-                    }));
-                    a++;
-                }
-
-
-                //rb.add_item_block(new single_item());
-                //rb.add_item_block(new single_item());
-                //rb.add_item_block(new single_item());
-                //rb.add_item_block(new single_item());
-                //
-                //rb.add_item_block(new single_item());
-                //rb.add_item_block(new single_item());
-                //rb.add_item_block(new single_item());
-                //rb.add_item_block(new single_item());
-
             }
-
         });
 
         return load_main_page_data;

@@ -2,7 +2,7 @@
  * Created by Cubla on 09.04.2018.
  */
 (function(_export) {
-    var name = "js/ui/modules/single_item";
+    var name = "js/ui/single_item";
     var libs = [
         "js/libs/base"
     ];
